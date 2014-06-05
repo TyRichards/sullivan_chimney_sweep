@@ -74,6 +74,15 @@ header .navbar-brand {
 
 .masthead {
     background-color: transparent;
+    .background {
+        background-image: image-url('ISP2057865_Veer.jpg');
+        background-position: 50% 0;
+        opacity: 100;
+        filter: alpha(opacity=10000);
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    
 }
 
 // Sidebar Feature Image /////////////////////////////////////////////////////////////////
