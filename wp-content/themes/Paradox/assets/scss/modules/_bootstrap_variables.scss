@@ -19,7 +19,7 @@ $brand-danger:          #c0392b;
 $brand-dark:            #171717;
 
 // Scaffolding /////////////////////////////////////////////////////////////////
-$body-bg:               #ffffff; //#ecf0f1;
+$body-bg:               $gray-dark; //#ecf0f1;
 $header-bg-color:       $brand-dark;
 $footer-bg-color:       $header-bg-color;
 $text-color:            #7f8c8d;
@@ -314,7 +314,7 @@ $dropdown-link-active-bg:        inherit;
 // Components /////////////////////////////////////////////////////////////////
 
 // // Basics of a navbar
-$navbar-height:                    70px;
+$navbar-height:                    180px;
 // $navbar-margin-bottom:             $line-height-computed;
 $navbar-border-radius:             0px;
 // $navbar-padding-horizontal:        floor(($grid-gutter-width / 2));
@@ -322,8 +322,8 @@ $navbar-border-radius:             0px;
 $navbar-collapse-max-height:       700px;
 
 // $navbar-default-color:             #777;
-$navbar-default-bg:                darken($header-bg-color, 5%);
-$navbar-default-border:            darken($header-bg-color, 10%);
+$navbar-default-bg:                transparent; //darken($header-bg-color, 5%);
+$navbar-default-border:            transparent; //darken($header-bg-color, 10%);
 
 // // Navbar links
 $navbar-default-link-color:                lighten($header-bg-color, 55%);

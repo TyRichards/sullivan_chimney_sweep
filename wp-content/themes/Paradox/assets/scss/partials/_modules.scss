@@ -53,7 +53,7 @@ border: 1px solid #dddddd;
 }
 
 header .navbar-brand {
-    padding-top: 15px;
+    // padding-top: 15px;
 
     img {
         width: 240px;
@@ -67,12 +67,13 @@ header .navbar-brand {
     padding-right: 0px;
 }    
 
+.fa-right { margin-left: 15px; }
+.fa-left { margin-right: 15px; }
+
 // Masthead /////////////////////////////////////////////////////////////////
 
-.clipboard-icon {
-    background: image-url('clipboard.png') no-repeat top left; 
-    padding-left: 120px;
-    min-height: 91px;
+.masthead {
+    background-color: transparent;
 }
 
 // Sidebar Feature Image /////////////////////////////////////////////////////////////////
@@ -115,6 +116,9 @@ border-color: $btn-secondary-border;
 
 // Header Navigation Menus /////////////////////////////////////////////////////////////////
 
+.navbar-btn.navbar-right { margin-left: 30px; }
+.navbar-btn.navbar-left { margin-right: 30px; }
+
 .nav > .menu-item > a {
     font-weight: 500;
 }
@@ -124,7 +128,7 @@ border-color: $btn-secondary-border;
 }
 
 body > header > .top-navbar {
-    border-bottom: 5px solid $gray-lighter;
+    // border-bottom: 5px solid $gray-lighter;
 }
 
 .navbar-toggle {
@@ -218,7 +222,7 @@ color: #ffffff!important;
 // Headings /////////////////////////////////////////////////////////////////
 
 .body-content {
-    @include dynamic-headings-color($headings-color, $body-bg, $text-color); // If header color is same as bg, then darken text color
+    // @include dynamic-headings-color($headings-color, $body-bg, $text-color); // If header color is same as bg, then darken text color
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -231,14 +235,6 @@ h1, h2, h3, h4, h5, h6 {
         margin: $paragraph-top-margin;
         margin-bottom: 0px;
     }
-}
-
-
-// Phone Number
-.top-header .widget h3 {
-    font-size: 26px;
-    font-family: "proxima-nova";
-    font-weight: bold;
 }
 
 // Site Title
@@ -343,6 +339,66 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $regular;
 }
 
+// Sidebar /////////////////////////////////////////////////////////////////
+
+.primary-content {
+    background-color: #ffffff;
+    position: relative;
+    .sidebar.background {
+        display: block;       
+        opacity: 100;
+        filter: alpha(opacity=10000);
+        opacity: 1;
+        filter: alpha(opacity=100);
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background: 50% 50% no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        // opacity: 20;
+        // // filter: alpha(opacity=2000);
+        // // opacity: 0.2;
+        // filter: alpha(opacity=20);  
+        .container {
+            height: 100%;
+            padding-top: 0;
+            padding-bottom: 0;
+        }      
+        .col-sm-4 {
+            position: absolute;
+            height: 100%;
+            div { 
+                position: absolute;
+                right: 0;
+                height: 100%;
+                width: 1000px;
+                background: #f3f3f3;
+                margin: 0;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                img {
+                    height: 100% !important;
+                    width: auto;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+
+        }
+    }
+
+}
+
 // Widgets /////////////////////////////////////////////////////////////////
 
 .widget ul.menu {
@@ -373,10 +429,6 @@ h1, h2, h3, h4, h5, h6 {
 .widget_sp_image img {
     height: auto;
     @include border-radius($border-radius-img);
-}
-
-.top-header .widget-title {
-    margin-bottom: 5px;
 }
 
 .small-footer .menu li {

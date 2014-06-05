@@ -45,63 +45,26 @@
 		<![endif]-->			
 		
 		<?php do_action('before'); ?> 
-		<header>			
-			<section class="container top-header hidden-xs">
-				<div class="col-sm-7 col-md-6 header-left col-no-padding-xs">
-<!-- 					<h2 class="site-title">
-						<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
-					</h2>
-					<p class="site-description">						
-						<?php bloginfo('description'); ?> 						
-					</p> -->
-					<div class="main-logo col-sm-10 col-md-9 col-no-padding-xs">
-						<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-				        	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/xstream-inspections-logo-darkbg.svg" alt="Xstream Inspections Commercial & Residential Inspections" width="100%">
-				        </a>
-			        </div>			        
-				</div>
-				<div class="col-sm-5 col-md-6 header-right">
-					<div class="sr-only">
-						<a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
-					</div>
-					<?php if (is_active_sidebar('header-right')) { ?> 
-					<div class="pull-right text-right">
-						<?php dynamic_sidebar('header-right'); ?> 
-					</div>
-					<div class="clearfix"></div>
-					<?php } // endif; ?> 
-				</div>
-			</section><!--.section-top-header-->		
-			
+		<header>				
 			<section class="top-navbar">				
 				<nav class="navbar navbar-default" role="navigation">
 					<div class="container">						
-						<div class="navbar-header">	
-							<div class="col-xs-10 col-no-padding-xs visible-xs">
-								<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home" width="100%">	
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/xstreaminspections-logo-sm.svg" alt="Xstream Inspections Commercial & Residential Inspections">							
-								</a>	
-							</div>											
-							<div class="col-xs-2 col-no-padding-xs">
-								<button type="button" class="navbar-toggle navbar-right" data-toggle="collapse" data-target=".navbar-primary-collapse">
-									<span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>									
-								</button>
-							</div>					
-						</div>
-						
+						<div class="navbar-header">																	
+							<button type="button" class="navbar-toggle navbar-right" data-toggle="collapse" data-target=".navbar-primary-collapse">
+								<span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>									
+							</button>
+							<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
+								<?php echo esc_attr(get_bloginfo('name', 'display')); ?>
+							</a>					
+						</div>						
 						<div class="collapse navbar-collapse navbar-primary-collapse">
-							<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-left', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?> 
-							<?php if (is_active_sidebar('navbar-right')) { 								
-								dynamic_sidebar('navbar-right'); 
-							} ?> 
-
-							<a class="btn btn-danger navbar-btn navbar-right visible-lg" href="/schedule-inspection">
-								<i class="fa fa-calendar fa-1x"></i>
-								Schedule Inspection
-							</a>        					
+							<a class="btn btn-primary navbar-btn navbar-right hidden-xs" href="/schedule-inspection">
+								<i class="fa fa-phone fa-left"></i>Call (817) 914-4898
+							</a>     							
+							<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-right', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?>
 						</div><!--.navbar-collapse-->
 					</div>
 				</nav>				
