@@ -61,23 +61,23 @@ add_action('after_setup_theme', 'bootstrapBasicSetup');
  */
 function bootstrapBasicWidgetsInit() 
 {
-	register_sidebar(array(
-		'name'          => __('Header right', 'bootstrap-basic'),
-		'id'            => 'header-right',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<p class="widget-title lead">',
-		'after_title'   => '</p>',
-	));
+	// register_sidebar(array(
+	// 	'name'          => __('Header right', 'bootstrap-basic'),
+	// 	'id'            => 'header-right',
+	// 	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</div>',
+	// 	'before_title'  => '<p class="widget-title lead">',
+	// 	'after_title'   => '</p>',
+	// ));
 	
-	register_sidebar(array(
-		'name'          => __('Navigation bar right', 'bootstrap-basic'),
-		'id'            => 'navbar-right',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	));
+	// register_sidebar(array(
+	// 	'name'          => __('Navigation bar right', 'bootstrap-basic'),
+	// 	'id'            => 'navbar-right',
+	// 	'before_widget' => '',
+	// 	'after_widget'  => '',
+	// 	'before_title'  => '',
+	// 	'after_title'   => '',
+	// ));
 	
 	// register_sidebar(array(
 	// 	'name'          => __('Sidebar left', 'bootstrap-basic'),
@@ -96,24 +96,42 @@ function bootstrapBasicWidgetsInit()
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	));
+
+	// register_sidebar(array(
+	// 	'name'          => __('Large Footer Col 1', 'bootstrap-basic'),
+	// 	'id'            => 'footer-1',
+	// 	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</div>',
+	// 	'before_title'  => '<h3 class="widget-title">',
+	// 	'after_title'   => '</h3>',
+	// ));	
 	
-	register_sidebar(array(
-		'name'          => __('Footer left', 'bootstrap-basic'),
-		'id'            => 'footer-left',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	));
+	// register_sidebar(array(
+	// 	'name'          => __('Large Footer Col 2', 'bootstrap-basic'),
+	// 	'id'            => 'footer-2',
+	// 	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</div>',
+	// 	'before_title'  => '<h3 class="widget-title">',
+	// 	'after_title'   => '</h3>',
+	// ));
 	
-	register_sidebar(array(
-		'name'          => __('Footer right', 'bootstrap-basic'),
-		'id'            => 'footer-right',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	));
+	// register_sidebar(array(
+	// 	'name'          => __('Large Footer Col 3', 'bootstrap-basic'),
+	// 	'id'            => 'footer-3',
+	// 	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</div>',
+	// 	'before_title'  => '<h3 class="widget-title">',
+	// 	'after_title'   => '</h3>',
+	// ));
+
+	// register_sidebar(array(
+	// 	'name'          => __('Large Footer Col 4', 'bootstrap-basic'),
+	// 	'id'            => 'footer-4',
+	// 	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</div>',
+	// 	'before_title'  => '<h3 class="widget-title">',
+	// 	'after_title'   => '</h3>',
+	// ));	
 
 	register_sidebar(array(
 		'name'          => __('Footer Credits', 'bootstrap-basic'),
@@ -123,6 +141,7 @@ function bootstrapBasicWidgetsInit()
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	));	
+	
 }// bootstrapBasicWidgetsInit
 add_action('widgets_init', 'bootstrapBasicWidgetsInit');
 
