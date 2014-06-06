@@ -11,17 +11,16 @@ Template Name: Home
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
-                <h3 class="text-center">The best darn chimney sweep out there</h3>  
-                <div class="text-center"><i class="fa fa-chevron-down"></i></div>              
+                <h2 class="text-center"><?php bloginfo('description'); ?></h2>  
+                <div class="text-center" style="margin-top:25px">
+                    <a href="#home"><i class="fa fa-chevron-down fa-3x"></i></a>
+                </div>              
             </div>
         </div>
     </div>
 </section>
 
-
-
-
-<section class="primary-content">           
+<section class="primary-content" id="home">           
     <div class="sidebar background landscape">
         <div class="container">
             <div class="row">
@@ -60,14 +59,7 @@ Template Name: Home
                         echo "\n\n";
 
                     } //endwhile;
-                    ?>
-                    <a class="btn btn-primary" href="#">
-                        <i class="fa fa-phone fa-1x"></i>Call (817) 914-4898                            
-                    </a>
-                        
-                    <a class="btn btn-primary" href="/schedule">
-                        <i class="fa fa-calendar fa-1x"></i>Schedule Service
-                    </a>     
+                    ?>   
             </div>
         </div>
     </div>    

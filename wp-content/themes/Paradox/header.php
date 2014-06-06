@@ -28,21 +28,15 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!-- Google Analytics -->
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-49327923-1', 'xstreaminspections.com');
-		  ga('send', 'pageview');
-
-		</script>		
+		<!-- Google Analytics -->	
 
 		<!--[if lte IE 8]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-		<![endif]-->			
+		<![endif]-->	
+
+		<div id="bg">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/bg.jpg" alt="Sullivan Chimney Sweep">
+		</div>				
 		
 		<?php do_action('before'); ?> 
 		<header>				
@@ -57,7 +51,8 @@
 								<span class="icon-bar"></span>									
 							</button>
 							<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-								<?php echo esc_attr(get_bloginfo('name', 'display')); ?>
+								<?php // echo esc_attr(get_bloginfo('name', 'display')); ?>
+								<img style="max-width:210px; margin-top: -33px;" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png">
 							</a>					
 						</div>						
 						<div class="collapse navbar-collapse navbar-primary-collapse">
