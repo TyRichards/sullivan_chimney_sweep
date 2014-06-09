@@ -43,7 +43,7 @@ Template Name: Home
     </div>
     <div class="main-col container">
         <div class="row">
-            <div class="col-sm-5 col-sm-offset-5">
+            <div class="col-sm-6 col-sm-offset-5">
                 <?php
                     while (have_posts()) {
                         the_post();
