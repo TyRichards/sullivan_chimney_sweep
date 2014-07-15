@@ -21,29 +21,10 @@ Template Name: Home
 </section>
 
 <section class="primary-content" id="home">           
-    <div class="sidebar background landscape">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div>
-                        <!-- <img src="startup/common-files/img/content/landscape.jpg" alt=""> -->
-                        <?php 
-                            if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-                            the_post_thumbnail('sidebar-thumb', array('class' => '' ));
-                            } 
-                            else {
-                                ?><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sidebar-default.jpg" class="feature-image attachment-sidebar-thumb wp-post-image img-rounded col-md-9 col-no-padding" alt="<?php wp_title('|', true, 'right'); ?>"><?php
-                            }
-                        ?> 
-                        <?php get_sidebar('default'); ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="main-col container">
         <div class="row">
-            <div class="col-sm-6 col-sm-offset-5">
+            <div class="col-sm-6 col-sm-offset-3">
                 <?php
                     while (have_posts()) {
                         the_post();

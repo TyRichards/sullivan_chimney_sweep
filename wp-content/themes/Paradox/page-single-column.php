@@ -8,7 +8,7 @@ Template Name: Single Column
 
 <section class="primary-content">
     <div class="container col-no-padding-xs">        
-        <section class="container main-col col-sm-8 col-sm-offset-2 page-content">                
+        <section class="container main-col col-sm-6 col-sm-offset-3 page-content">                
             <div id="main" class="site-main" role="main">
                 <?php 
                 while (have_posts()) {
@@ -27,15 +27,6 @@ Template Name: Single Column
 
                 } //endwhile;
                 ?> 
-                <a class="btn btn-danger" href="#">
-                    <i class="fa fa-phone fa-1x"></i>
-                    Call (972) 492-7920
-                </a>
-                    &nbsp;&nbsp;
-                <a class="btn btn-danger" href="/contact-us">
-                    <i class="fa fa-envelope fa-1x"></i>
-                    Email Us
-                </a> 
             </div>           
         </section>               
     </div>

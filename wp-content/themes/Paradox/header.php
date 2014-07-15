@@ -15,7 +15,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
-		<meta name="author" content="Shelly Morgan">
+		<meta name="author" content="Luke Sullivan">
 		<title><?php wp_title('|', true, 'right'); ?></title>		
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png">
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">	
@@ -71,20 +71,15 @@
 
 			<!-- Mobile Landing Section -->
 			<section class="mobile-landing visible-xs col-xs-12">
-			    <div class="col-xs-6 col-no-padding-xs phone" style="padding-right:5px">
-				    <a class="btn btn-primary btn-lg btn-block" href="/schedule-inspection">
-				        (972) 492-7920
-				    </a> 
-			    </div>
-			    <div class="col-xs-6 col-no-padding-xs phone" style="padding-left:5px">
-				    <a class="btn btn-primary btn-lg btn-block" href="/schedule-inspection">
-				        (214) 390-2050
+			    <div class="col-xs-12 col-no-padding-xs phone">
+				    <a class="btn btn-primary btn-lg btn-block" href="tel:8179144898">
+				        (817) 914-4898
 				    </a> 
 			    </div>
 			    <div class="col-xs-12 col-no-padding-xs call-to-action">
-				    <a class="btn btn-danger btn-lg btn-block col-xs-12" href="/schedule-inspection" style="margin-top:0px">
+				    <a class="btn btn-primary btn-lg btn-block col-xs-12" href="/schedule-service" style="margin-top:0px">
 				        <i class="fa fa-calendar fa-1x"></i>
-				        Schedule Inspection
+				        Schedule Service
 				    </a>
 			    </div>
 			</section>			
